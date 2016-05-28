@@ -1,0 +1,17 @@
+[user]
+  name = oshjma
+  email = k.oshjma@gmail.com
+[color]
+  ui = true
+[alias]
+  ad = add
+  br = branch
+  cm = commit
+  co = checkout
+  lg = log
+  lgo = log --oneline
+  rb = rebase
+  rbi = rebase -i
+  st = status
+[core]
+  editor = emacsclient -nw -a ''

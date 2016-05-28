@@ -1,0 +1,34 @@
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
+
+(require 'cl-lib)
+(let*
+  ((to-install
+    '(auto-complete
+      avy
+      expand-region
+      git-commit-mode
+      git-rebase-mode
+      gitconfig-mode
+      gitignore-mode
+      hide-comnt
+      init-loader
+      markdown-mode
+      multiple-cursors
+      open-junk-file
+      popwin
+      ruby-end
+      scala-mode
+      smart-newline
+      smartparens
+      smex
+      visual-regexp
+      yaml-mode))
+   (not-installed
+     (cl-remove-if 'package-installed-p to-install)))
+  (when not-installed
+    (package-refresh-contents)
+    (dolist (package not-installed) (package-install package))))
+
+(init-loader-load)

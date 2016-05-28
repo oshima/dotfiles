@@ -1,0 +1,19 @@
+#!/bin/sh
+
+values=($(pmset -g ps | tail -1 | awk '{print $2,$3}' | tr -d '%;'))
+ratio=${values[0]}
+status=${values[1]}
+
+if [ "$status" != discharging ]; then
+  color=green
+else
+  if [ $ratio -gt 50 ]; then
+    color=green
+  elif [ $ratio -gt 20 ]; then
+    color=yellow
+  else
+    color=red
+  fi
+fi
+
+echo "#[fg=${color}]${ratio}%#[default]"
