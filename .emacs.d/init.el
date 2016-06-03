@@ -14,6 +14,7 @@
       gitignore-mode
       hide-comnt
       init-loader
+      json-mode
       markdown-mode
       multiple-cursors
       open-junk-file
