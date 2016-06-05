@@ -27,10 +27,6 @@ alias -g H='| head'
 alias -g T='| tail'
 alias -g C='`git log --oneline | peco | cut -d" " -f1`'
 
-hash -d dl=~/Downloads
-hash -d doc=~/Documents
-hash -d drop=~/Dropbox
-
 typeset -U path PATH
 
 export PATH=/usr/local/bin:$PATH
