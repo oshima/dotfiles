@@ -30,7 +30,7 @@ alias -g C='`git log --oneline | peco | cut -d" " -f1`'
 typeset -U path PATH
 
 export PATH=/usr/local/bin:$PATH
-export PROMPT='%F{blue}%c%f ${vcs_info_msg_0_}%F{yellow}❯%f '
+export PROMPT='%F{blue}%c%f${vcs_info_msg_0_} %F{yellow}❯%f '
 export LS_COLORS='di=34:ln=35:so=32:ex=31:bd=46;34:cd=43;34'
 
 export HISTFILE=~/.zsh_history
@@ -43,7 +43,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats '%F{green}%b%f '
+zstyle ':vcs_info:*' formats ' %F{green}%b%f'
 precmd () { vcs_info }
 
 eval "$(rbenv init - --no-rehash)"
