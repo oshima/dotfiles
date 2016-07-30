@@ -1,3 +1,4 @@
+Pry.history.load
 Pry.config.theme = 'my-theme'
 
 class Pry::ColorPrinter
