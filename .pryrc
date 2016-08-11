@@ -1,7 +1,7 @@
 Pry.config.theme = 'my-theme'
 
-Pry::Commands.block_command(:r, keep_retval: true) do |*args|
-  results = args.map { |src| require src }
+Pry::Commands.block_command(:<<, keep_retval: true) do |*args|
+  results = args.map { |arg| require arg }
   results.size <= 1 ? results[0] : results
 end
 
