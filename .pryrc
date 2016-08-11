@@ -7,14 +7,17 @@ end
 
 class Pry::ColorPrinter
   remove_const :OBJ_COLOR
-  OBJ_COLOR = "\e[38;5;173m" # 173:dark_salmon
+  OBJ_COLOR = "\e[38;5;173m"
 end
 
 class << self
   def copy(obj)
-    obj.to_s.tap do |str|
-      IO.popen('pbcopy', 'w') { |io| io << str }
-    end
+    IO.popen('pbcopy', 'w') { |io| io << obj }
+    nil
+  end
+
+  def pcopy(obj)
+    copy(obj.pretty_inspect)
   end
 
   def paste
