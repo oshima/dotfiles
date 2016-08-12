@@ -20,10 +20,28 @@ class << self
   end
 
   def pcopy(obj)
-    copy(obj.pretty_inspect)
+    copy obj.pretty_inspect
   end
 
   def paste
     `pbpaste`
+  end
+
+  def json(str)
+    require 'json'
+    JSON.parse(str)
+  end
+
+  def jsonf(file)
+    json File.read(File.expand_path(file))
+  end
+
+  def yaml(str)
+    require 'yaml'
+    YAML.load(str)
+  end
+
+  def yamlf(file)
+    yaml File.read(File.expand_path(file))
   end
 end
