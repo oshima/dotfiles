@@ -1,6 +1,6 @@
 #!/bin/sh
 
-values=($(pmset -g ps | tail -1 | awk '{print $2,$3}' | tr -d '%;'))
+values=($(pmset -g ps | tail -n 1 | awk '{print $2,$3}' | tr -d '%;'))
 ratio=${values[0]}
 status=${values[1]}
 
