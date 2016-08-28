@@ -5,8 +5,8 @@
 (require 'cl-lib)
 (let*
   ((to-install
-    '(auto-complete
-      avy
+    '(avy
+      company
       expand-region
       git-commit-mode
       git-rebase-mode
