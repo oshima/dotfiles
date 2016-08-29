@@ -42,4 +42,4 @@
 
 ;; truncation の記号を変更する
 (set-display-table-slot standard-display-table 'truncation
-  (make-glyph-code ?| 'shadow))
+                        (make-glyph-code ?| 'shadow))
