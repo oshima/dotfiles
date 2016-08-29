@@ -1,3 +1,5 @@
+(require 'smartparens-config)
+
 (smartparens-global-mode t)
 (show-smartparens-global-mode t)
 
@@ -12,5 +14,3 @@
                     :inherit 'underline)
 (set-face-attribute 'sp-show-pair-mismatch-face nil
                     :inherit 'underline :foreground "red")
-
-(sp-local-pair 'ruby-mode "|" "|")

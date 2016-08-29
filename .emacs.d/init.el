@@ -18,7 +18,6 @@
         multiple-cursors
         open-junk-file
         popwin
-        ruby-end
         scala-mode
         smart-newline
         smartparens
