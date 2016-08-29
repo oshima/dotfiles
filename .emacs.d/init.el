@@ -8,8 +8,7 @@
       '(avy
         company
         expand-region
-        git-commit-mode
-        git-rebase-mode
+        git-commit
         gitconfig-mode
         gitignore-mode
         hide-comnt
