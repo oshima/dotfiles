@@ -7,8 +7,8 @@
 ;; [C-q] back-to-indentation
 (global-set-key (kbd "C-q") 'back-to-indentation)
 
-;; [C-x C-b] ibuffer
-(global-set-key (kbd "C-x C-b") 'ibuffer)
+;; [C-,] ibuffer
+(global-set-key (kbd "C-,") 'ibuffer)
 
 ;; [C-.] dired-jump
 (global-set-key (kbd "C-.") 'dired-jump)
