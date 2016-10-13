@@ -175,9 +175,9 @@ names to which it refers are bound."
      (isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
      ;; IDO
-     (ido-subdir ((,class (:foreground ,comment))))
-     (ido-first-match ((,class (:foreground ,orange :weight bold))))
-     (ido-only-match ((,class (:foreground ,red :weight bold))))
+     (ido-subdir ((,class (:foreground ,blue))))
+     (ido-first-match ((,class (:foreground ,orange))))
+     (ido-only-match ((,class (:foreground ,red))))
      (ido-indicator ((,class (:foreground ,red :background ,background))))
      (ido-virtual ((,class (:foreground ,comment))))
 

@@ -12,6 +12,7 @@
         gitconfig-mode
         gitignore-mode
         hide-comnt
+        ido-vertical-mode
         init-loader
         json-mode
         markdown-mode
