@@ -11,6 +11,6 @@
 (setq sp-highlight-wrap-tag-overlay nil)
 
 (set-face-attribute 'sp-show-pair-match-face nil
-                    :inherit 'underline)
+                    :underline t :inherit 'unspecified)
 (set-face-attribute 'sp-show-pair-mismatch-face nil
-                    :inherit 'underline :foreground "red")
+                    :foreground "red" :underline t :inherit 'unspecified)
