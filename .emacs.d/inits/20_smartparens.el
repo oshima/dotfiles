@@ -3,8 +3,7 @@
 (smartparens-global-mode t)
 (show-smartparens-global-mode t)
 
-(global-set-key (kbd "M-[") 'sp-backward-unwrap-sexp)
-(global-set-key (kbd "M-]") 'sp-unwrap-sexp)
+(global-set-key (kbd "C--") 'sp-splice-sexp)
 
 (setq sp-highlight-pair-overlay nil)
 (setq sp-highlight-wrap-overlay nil)

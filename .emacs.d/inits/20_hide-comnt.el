@@ -1,1 +1,3 @@
-(global-set-key (kbd "M-#") 'hide/show-comments-toggle)
+(require 'hide-comnt)
+
+(global-set-key (kbd "C-x ;") 'hide/show-comments-toggle)
