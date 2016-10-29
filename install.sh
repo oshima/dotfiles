@@ -6,4 +6,5 @@ ln -sf $PWD/.pry       ~
 ln -sf $PWD/.pryrc     ~
 ln -sf $PWD/.tmux      ~
 ln -sf $PWD/.tmux.conf ~
+ln -sf $PWD/.zsh       ~
 ln -sf $PWD/.zshrc     ~

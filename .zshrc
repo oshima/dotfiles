@@ -43,4 +43,8 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
+for f in ~/.zsh/*; do
+  source $f
+done
+
 eval "$(rbenv init - --no-rehash)"
