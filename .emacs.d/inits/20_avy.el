@@ -1,4 +1,4 @@
-(global-set-key (kbd "C-'") 'avy-goto-word-1)
+(global-set-key (kbd "C-;") 'avy-goto-word-1)
 
 (setq avy-style 'at)
 (setq avy-keys (append (number-sequence ?a ?z) (number-sequence ?A ?Z)))

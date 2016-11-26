@@ -19,6 +19,9 @@
 ;; [C-x f] find-file
 (global-set-key (kbd "C-x f") 'find-file)
 
+;; [C-x r] revert-buffer
+(global-set-key (kbd "C-x r") 'revert-buffer)
+
 ;; [M-f] forward-to-word
 (require 'misc)
 (global-set-key (kbd "M-f") 'forward-to-word)
