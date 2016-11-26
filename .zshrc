@@ -35,8 +35,6 @@ alias rmdir='rm -rf'
 alias grep='grep --color'
 alias tree='tree -I .git'
 alias relog='exec $SHELL -l'
-alias e='emacsclient -nw -a ""'
-alias ekill='emacsclient -e "(kill-emacs)"'
 
 alias -g G='| grep'
 alias -g L='| less'
