@@ -1,5 +1,5 @@
 ;; Hide menu bar
-(menu-bar-mode -1)
+(menu-bar-mode 0)
 
 ;; Enable to delete/overwrite region
 (delete-selection-mode t)
@@ -21,14 +21,17 @@
 ;; Reduce flequency of GC
 (setq gc-cons-threshold (* 10 gc-cons-threshold))
 
+;; Follow symlinks to version controlled files
+(setq vc-follow-symlinks t)
+
 ;; Empty initial message of scratch buffer
 (setq initial-scratch-message "")
 
 ;; Scroll 1 line at a time
 (setq scroll-conservatively 1)
 
-;; Follow symlinks to version controlled files
-(setq vc-follow-symlinks t)
+;; Preserve cursor position when paging down/up
+(setq scroll-preserve-screen-position t)
 
 ;; Require final newline when saving
 (setq require-final-newline t)
@@ -39,6 +42,6 @@
 ;; Answer with y or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Change symbol of truncation
+;; Change marker of line truncation
 (set-display-table-slot standard-display-table 'truncation
                         (make-glyph-code ?| 'shadow))

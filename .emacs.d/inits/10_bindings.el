@@ -29,9 +29,6 @@
 ;; [M-h] backward-kill-word
 (global-set-key (kbd "M-h") 'backward-kill-word)
 
-;; [M-o] other-window
-(global-set-key (kbd "M-o") 'other-window)
-
 ;; [M-q] quoted-insert
 (global-set-key (kbd "M-q") 'quoted-insert)
 
