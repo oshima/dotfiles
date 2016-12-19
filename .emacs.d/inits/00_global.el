@@ -4,7 +4,7 @@
 ;; Enable to delete/overwrite region
 (delete-selection-mode t)
 
-;; Don't wrap but trancate lines
+;; Don't wrap but truncate lines
 (setq-default truncate-lines t)
 (setq-default truncate-partial-width-windows t)
 
@@ -12,14 +12,16 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
-;; Don't make backup files
+;; Don't create these files automatically
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+(setq auto-save-list-file-prefix nil)
+(setq create-lockfiles nil)
 
 ;; Reduce flequency of GC
 (setq gc-cons-threshold (* 10 gc-cons-threshold))
 
-;; Make scratch buffer's initial message be empty
+;; Empty initial message of scratch buffer
 (setq initial-scratch-message "")
 
 ;; Scroll 1 line at a time
@@ -37,6 +39,6 @@
 ;; Answer with y or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Change symbol character of truncation
+;; Change symbol of truncation
 (set-display-table-slot standard-display-table 'truncation
                         (make-glyph-code ?| 'shadow))
