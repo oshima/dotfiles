@@ -7,7 +7,7 @@
       '("[%+] " mode-line-buffer-identification))
 
 (setq mode-line-right-format
-      '("%l,%c" (vc-mode vc-mode) " %m"))
+      '("%l,%c" (vc-mode vc-mode) " " mode-name))
 
 (setq-default mode-line-format
               '(:eval (make-mode-line-format mode-line-left-format
