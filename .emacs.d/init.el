@@ -2,9 +2,7 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
-(require 'cl-lib)
-(let*
-    ((to-install
+(setq required-packages
       '(avy
         company
         expand-region
@@ -25,10 +23,9 @@
         smex
         visual-regexp
         yaml-mode))
-     (not-installed
-      (cl-remove-if 'package-installed-p to-install)))
-  (when not-installed
-    (package-refresh-contents)
-    (dolist (package not-installed) (package-install package))))
+
+(unless package-archive-contents (package-refresh-contents))
+(dolist (pkg required-packages)
+  (unless (package-installed-p pkg) (package-install pkg)))
 
 (init-loader-load)

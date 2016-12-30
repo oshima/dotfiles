@@ -1,7 +1,7 @@
 (require 'smartparens-config)
 
-(smartparens-global-mode t)
-(show-smartparens-global-mode t)
+(smartparens-global-mode 1)
+(show-smartparens-global-mode 1)
 
 (global-set-key (kbd "C--") 'sp-splice-sexp)
 

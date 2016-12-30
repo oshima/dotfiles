@@ -2,7 +2,7 @@
 (menu-bar-mode 0)
 
 ;; Enable to delete/overwrite region
-(delete-selection-mode t)
+(delete-selection-mode 1)
 
 ;; Don't wrap but truncate lines
 (setq-default truncate-lines t)
