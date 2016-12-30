@@ -1,7 +1,7 @@
 (defun make-mode-line-format (left right)
   (let ((margin (- (window-total-width)
-                   (length (format-mode-line (append left right))))))
-    (append left (make-list (max margin 0) " ") right)))
+                   (length (format-mode-line (list left right))))))
+    (list left (make-string (max margin 0) ? ) right)))
 
 (setq-default mode-line-format
               '(:eval (make-mode-line-format mode-line-left-format
