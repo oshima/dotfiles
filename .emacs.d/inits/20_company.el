@@ -18,9 +18,9 @@
                     :foreground "blue")
 ;; tooltip search
 (set-face-attribute 'company-tooltip-search nil
-                    :foreground "green" :inherit 'unspecified)
+                    :foreground "yellow" :inherit 'unspecified)
 (set-face-attribute 'company-tooltip-search-selection nil
-                    :foreground "green" :inherit 'unspecified)
+                    :foreground "yellow" :inherit 'unspecified)
 ;; tooltip annotation
 (set-face-attribute 'company-tooltip-annotation nil
                     :foreground "red")

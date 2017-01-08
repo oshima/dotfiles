@@ -5,4 +5,4 @@
 
 (with-eval-after-load 'avy
   (set-face-attribute 'avy-lead-face nil
-                      :foreground "red" :background 'unspecified))
+                      :foreground "red" :background "color-235"))
