@@ -7,6 +7,7 @@
   ad = add
   br = branch
   cm = commit
+  df = diff
   co = checkout
   lg = log
   lgo = log --oneline
