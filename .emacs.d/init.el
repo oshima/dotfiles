@@ -28,4 +28,5 @@
 (dolist (pkg required-packages)
   (unless (package-installed-p pkg) (package-install pkg)))
 
+(setq init-loader-show-log-after-init 'error-only)
 (init-loader-load)
