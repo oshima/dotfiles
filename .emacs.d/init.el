@@ -22,6 +22,7 @@
         smartparens
         smex
         visual-regexp
+        web-mode
         yaml-mode))
 
 (unless package-archive-contents (package-refresh-contents))
