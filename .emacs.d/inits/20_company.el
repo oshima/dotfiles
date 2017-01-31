@@ -7,6 +7,7 @@
 (define-key company-search-map (kbd "C-p") 'company-select-previous)
 
 (setq company-selection-wrap-around t)
+(setq company-dabbrev-downcase nil)
 
 ;; tooltip base
 (set-face-attribute 'company-tooltip nil
