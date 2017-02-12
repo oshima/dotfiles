@@ -6,6 +6,7 @@
       '(avy
         company
         expand-region
+        fish-mode
         git-commit
         gitconfig-mode
         gitignore-mode
