@@ -8,9 +8,9 @@
 (setq-default truncate-lines t)
 (setq-default truncate-partial-width-windows t)
 
-;; Tab is 4 spaces
+;; Tab is 2 spaces
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 
 ;; Don't create these files automatically
 (setq make-backup-files nil)
