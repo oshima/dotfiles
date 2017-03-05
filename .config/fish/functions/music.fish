@@ -1,19 +1,20 @@
 function music
-  test "$MUSIC_DIR"; or set -g MUSIC_DIR ~/Dropbox/Music
+  test "$MUSIC_DIR"; or set -g MUSIC_DIR ~/Music
+  test "$MUSIC_EXT"; or set -g MUSIC_EXT m4a mp3
 
   test "$argv[1]" = '-q'
-  and begin; killall afplay; return $status; end
+  and begin; killall afplay ^/dev/null; return 0; end
 
-  find "$MUSIC_DIR" -type f | \
-  iconv -f UTF-8-MAC -t UTF-8 ^/dev/null | read -z files
+  find $MUSIC_DIR -type f | \
+  grep '\.\('(string join '\|' $MUSIC_EXT)'\)$' | \
+  iconv -c -f UTF-8-MAC -t UTF-8 | read -z files
 
   echo "$files" | grep -v '^$' | \
-  sed -e 's/^.*\///' -e 's/\(.*\)\(\.[^.]*\)$/\1/' -e 's/^[0-9-]* //' | \
+  sed -e 's/^.*\/\(.*\)\.[^.]*$/\1/' -e 's/^[-0-9]* //' | \
   sort | peco | read title
 
   test "$title"; or return 0
 
-  echo "$files" | grep "$title" | read file
-
-  afplay -v 0.5 -q 1 "$file" &
+  killall afplay ^/dev/null
+  afplay -v .5 -q 1 (echo "$files" | grep -m 1 "$title") &
 end

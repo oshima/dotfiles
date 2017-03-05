@@ -1,9 +1,9 @@
 function e
   if test "$argv[1]" = '-q'
-    emacsclient -e '(kill-emacs)'
-    return $status
+    emacsclient -e '(kill-emacs)' ^/dev/null
+    return 0
   end
-  if test -z (ps ax | grep 'emacs --daemon' | grep -v grep)
+  if test -z (ps x | grep 'emacs --daemon$')
     echo 'Starting Emacs daemon...'
     emacs --daemon >/dev/null ^&1
   end
