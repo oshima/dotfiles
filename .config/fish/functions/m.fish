@@ -1,4 +1,4 @@
-function music
+function m
   test "$MUSIC_DIR"; or set -g MUSIC_DIR ~/Music
   test "$MUSIC_EXT"; or set -g MUSIC_EXT m4a mp3
 
