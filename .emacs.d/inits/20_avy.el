@@ -4,4 +4,6 @@
   (setq avy-style 'at)
   (setq avy-keys (append (number-sequence ?a ?z) (number-sequence ?A ?Z)))
   (set-face-attribute 'avy-lead-face nil
-                      :foreground "red" :background "color-235"))
+                      :foreground "yellow"
+                      :background 'unspecified
+                      :inverse-video t))
