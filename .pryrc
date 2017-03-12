@@ -1,6 +1,6 @@
 Pry.config.theme = 'my-theme'
 
-Pry::ColorPrinter.class_eval do
+Pry::ColorPrinter.instance_eval do
   remove_const :OBJ_COLOR
   const_set :OBJ_COLOR, "\e[38;5;173m"
 end
@@ -23,29 +23,19 @@ module Kernel
     nil
   end
 
-  def pcopy(obj)
-    copy obj.pretty_inspect
-  end
-
   def paste
     `pbpaste`
   end
 
   def json(str)
     require 'json'
+    str = File.read(str) if File.file?(str)
     JSON.parse(str)
-  end
-
-  def jsonf(file)
-    json File.read(File.expand_path(file))
   end
 
   def yaml(str)
     require 'yaml'
+    str = File.read(str) if File.file?(str)
     YAML.load(str)
-  end
-
-  def yamlf(file)
-    yaml File.read(File.expand_path(file))
   end
 end
