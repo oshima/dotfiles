@@ -11,10 +11,10 @@ function m
 
   echo "$files" | grep -v '^$' | \
   sed -e 's/^.*\/\(.*\)\.[^.]*$/\1/' -e 's/^[-0-9]* //' | \
-  sort | peco | read title
+  sort | fzf | read title
 
   test "$title"; or return 0
 
   killall afplay ^/dev/null
-  afplay -v .5 -q 1 (echo "$files" | grep -m 1 "$title") &
+  afplay -v .5 -q 1 (echo "$files" | grep -m 1 "$title\.") &
 end
