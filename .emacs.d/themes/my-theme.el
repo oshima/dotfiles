@@ -39,7 +39,7 @@
    `(ido-subdir ((t (:foreground ,blue))))
    `(isearch ((t (:foreground ,orange :inverse-video t))))
    `(isearch-fail ((t (:foreground ,red))))
-   `(lazy-highlight ((t (:foreground ,green :inverse-video t))))
+   `(lazy-highlight ((t (:foreground ,yellow :inverse-video t))))
    `(link ((t (:foreground ,blue))))
    `(link-visited ((t (:foreground ,magenta))))
    `(linum ((t (:background ,mode-line))))
