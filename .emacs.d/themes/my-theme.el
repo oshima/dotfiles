@@ -43,6 +43,7 @@
    `(link ((t (:foreground ,blue))))
    `(link-visited ((t (:foreground ,magenta))))
    `(linum ((t (:background ,mode-line))))
+   `(match ((t (:foreground ,yellow :inverse-video t))))
    `(minibuffer-prompt ((t (:foreground ,blue))))
    `(mode-line ((t (:background ,mode-line))))
    `(mode-line-buffer-id ((t (:foreground ,magenta))))
