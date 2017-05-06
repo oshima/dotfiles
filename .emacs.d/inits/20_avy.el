@@ -2,7 +2,9 @@
 
 (with-eval-after-load 'avy
   (setq avy-style 'at)
-  (setq avy-keys (append (number-sequence ?a ?z) (number-sequence ?A ?Z)))
+  (setq avy-keys (append (number-sequence ?a ?z)
+                         (number-sequence ?A ?Z)))
+
   (set-face-attribute 'avy-lead-face nil
                       :foreground "yellow"
                       :background 'unspecified

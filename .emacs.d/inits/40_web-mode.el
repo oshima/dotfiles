@@ -7,6 +7,7 @@
   (setq web-mode-attr-value-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
   (setq web-mode-code-indent-offset 2)
+
   (set-face-attribute 'web-mode-html-tag-bracket-face nil
                       :foreground "blue")
   (set-face-attribute 'web-mode-html-tag-face nil
