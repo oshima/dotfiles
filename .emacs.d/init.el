@@ -18,11 +18,8 @@
         multiple-cursors
         open-junk-file
         popwin
-        scala-mode
-        smart-newline
         smartparens
         smex
-        visual-regexp
         web-mode
         yaml-mode))
 
