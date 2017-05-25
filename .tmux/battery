@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 values=($(pmset -g ps | tail -n 1 | awk '{print $3,$4}' | tr -d '%;'))
 ratio=${values[0]}
@@ -16,4 +16,4 @@ else
   fi
 fi
 
-echo "#[fg=${color}]${ratio}%#[default]"
+echo "#[fg=$color]$ratio%#[default]"
