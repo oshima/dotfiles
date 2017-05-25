@@ -16,6 +16,7 @@
         json-mode
         markdown-mode
         multiple-cursors
+        mwim
         open-junk-file
         popwin
         smartparens

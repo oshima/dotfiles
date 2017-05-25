@@ -4,9 +4,6 @@
 ;; [C-u] backward-kill-line
 (global-set-key (kbd "C-u") (lambda () (interactive) (kill-line 0)))
 
-;; [C-q] back-to-indentation
-(global-set-key (kbd "C-q") 'back-to-indentation)
-
 ;; [C-,] ibuffer
 (global-set-key (kbd "C-,") 'ibuffer)
 
@@ -28,9 +25,6 @@
 
 ;; [M-h] backward-kill-word
 (global-set-key (kbd "M-h") 'backward-kill-word)
-
-;; [M-q] quoted-insert
-(global-set-key (kbd "M-q") 'quoted-insert)
 
 ;; [M-,] beginning-of-buffer
 (global-set-key (kbd "M-,") 'beginning-of-buffer)
