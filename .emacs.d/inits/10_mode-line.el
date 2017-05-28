@@ -1,11 +1,9 @@
-(defun make-mode-line-format (left right)
-  (let ((margin (- (window-total-width)
-                   (length (format-mode-line (list left right))))))
-    (list left (make-string (max margin 0) ? ) right)))
-
 (setq-default mode-line-format
-              '(:eval (make-mode-line-format mode-line-left-format
-                                             mode-line-right-format)))
+              '(:eval
+                `((,(- (window-total-width)
+                       (length (format-mode-line mode-line-right-format)))
+                   ,mode-line-left-format)
+                  ,mode-line-right-format)))
 
 (setq mode-line-left-format
       '("[%+] " (:propertize "%b" face mode-line-buffer-id)))
