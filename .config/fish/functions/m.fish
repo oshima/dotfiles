@@ -9,7 +9,7 @@ function m
   grep '\.\('(string join '\|' $MUSIC_EXT)'\)$' | \
   iconv -c -f UTF-8-MAC -t UTF-8 | read -z files
 
-  echo "$files" | grep -v '^$' | \
+  echo -n "$files" | \
   sed -e 's/^.*\/\(.*\)\.[^.]*$/\1/' -e 's/^[-0-9]* //' | \
   sort | fzf | read title
 
