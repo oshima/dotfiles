@@ -42,6 +42,6 @@
 ;; Answer with y or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Change marker of line truncation
+;; Change glyph code of line truncation
 (set-display-table-slot standard-display-table 'truncation
-                        (make-glyph-code ?| 'shadow))
+                        (make-glyph-code ?¦ 'shadow))

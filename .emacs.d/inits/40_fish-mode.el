@@ -1,6 +1,5 @@
 (with-eval-after-load 'fish-mode
   (add-to-list 'fish-keywords "not")
-  (add-to-list 'fish-keywords "read")
 
   (font-lock-add-keywords
    'fish-mode
@@ -31,9 +30,9 @@
 
      ;; Variable definition
      (,(rx symbol-start
-           (or "read" "set")
+           "set"
            (1+ space)
-           (optional "-" (repeat 1 2 letter) (1+ space))
+           (optional "-" (1+ letter) (1+ space))
            (group (1+ (or alnum (syntax symbol))))
            symbol-end)
       1 font-lock-variable-name-face)

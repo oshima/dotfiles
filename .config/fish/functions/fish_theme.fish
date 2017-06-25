@@ -7,7 +7,7 @@ function fish_theme
   set -g fish_color_end normal
   set -g fish_color_error normal
   set -g fish_color_escape magenta
-  set -g fish_color_history_current normal
+  set -g fish_color_history_current blue
   set -g fish_color_host normal
   set -g fish_color_match normal
   set -g fish_color_normal normal

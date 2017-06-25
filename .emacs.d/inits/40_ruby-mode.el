@@ -6,6 +6,6 @@
   (font-lock-add-keywords
    'ruby-mode
    `((,(rx symbol-start
-           (or "true" "false" "nil")
+           (or "false" "nil" "self" "true")
            symbol-end)
       0 font-lock-variable-name-face))))
