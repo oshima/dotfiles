@@ -5,6 +5,7 @@
 (setq required-packages
       '(avy
         company
+        dockerfile-mode
         expand-region
         fish-mode
         git-commit
