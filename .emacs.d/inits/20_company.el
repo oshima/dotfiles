@@ -6,6 +6,7 @@
 (define-key company-search-map (kbd "C-n") 'company-select-next)
 (define-key company-search-map (kbd "C-p") 'company-select-previous)
 
+(setq company-minimum-prefix-length 2)
 (setq company-selection-wrap-around t)
 (setq company-dabbrev-downcase nil)
 
