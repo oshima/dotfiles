@@ -1,3 +1,7 @@
+(require 'ls-lisp)
+(setq ls-lisp-dirs-first t)
+(setq ls-lisp-use-insert-directory-program nil)
+
 (add-hook 'dired-load-hook
           (lambda ()
             (define-key dired-mode-map (kbd "i") nil)
