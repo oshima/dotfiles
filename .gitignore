@@ -1,5 +1,6 @@
 /.config/*
 !/.config/fish
+/.config/fish/completions
 /.config/fish/fishd.*
 
 /.emacs.d/*
