@@ -11,6 +11,7 @@
         git-commit
         gitconfig-mode
         gitignore-mode
+        go-mode
         ido-vertical-mode
         init-loader
         json-mode
