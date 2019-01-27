@@ -1,10 +1,3 @@
-Pry.config.theme = 'my-theme'
-
-Pry::ColorPrinter.instance_eval do
-  remove_const :OBJ_COLOR
-  const_set :OBJ_COLOR, "\e[38;5;173m"
-end
-
 Pry::Commands.create_command '<<' do
   description 'Require ruby libraries.'
   command_options keep_retval: true
