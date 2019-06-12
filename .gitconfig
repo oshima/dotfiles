@@ -7,8 +7,9 @@
   ad = add
   br = branch
   cm = commit
-  df = diff
   co = checkout
+  df = diff
+  gr = grep -n
   lg = log
   lgo = log --oneline
   rb = rebase
