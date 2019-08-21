@@ -1,19 +1,21 @@
 [user]
-  name = oshima
-  email = k.oshjma@gmail.com
+	name = oshima
+	email = k.oshjma@gmail.com
 [color]
-  ui = true
+	ui = true
 [alias]
-  ad = add
-  br = branch
-  cm = commit
-  co = checkout
-  df = diff
-  gr = grep -n
-  lg = log
-  lgo = log --oneline
-  rb = rebase
-  rbi = rebase -i
-  st = status
+	ad = add
+	br = branch
+	cm = commit
+	co = checkout
+	df = diff
+	gr = grep -n
+	lg = log
+	lgo = log --oneline
+	rb = rebase
+	rbi = rebase -i
+	rs = restore
+	st = status
+	sw = switch
 [core]
-  editor = emacsclient -nw -a ''
+	editor = emacsclient -nw -a ''
