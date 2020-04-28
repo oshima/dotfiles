@@ -10,6 +10,7 @@
         fish-mode
         git-commit
         gitconfig-mode
+        github-browse-file
         gitignore-mode
         go-mode
         ido-vertical-mode
