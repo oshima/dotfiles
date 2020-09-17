@@ -19,3 +19,8 @@
 	sw = switch
 [core]
 	editor = emacsclient -nw -a ''
+[pull]
+	rebase = false
+[color "grep"]
+	filename = cyan
+	linenumber = yellow
