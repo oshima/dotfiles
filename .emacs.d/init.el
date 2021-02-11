@@ -20,7 +20,6 @@
         mwim
         open-junk-file
         popwin
-        prettier-js
         smartparens
         smex
         web-mode
