@@ -1,4 +1,5 @@
 /.config/*
+!/.config/alacritty
 !/.config/fish
 /.config/fish/completions
 /.config/fish/fish_variables
@@ -7,6 +8,3 @@
 !/.emacs.d/init.el
 !/.emacs.d/inits
 !/.emacs.d/themes
-
-/.pry/themes/*
-!/.pry/themes/my-theme.prytheme.rb
