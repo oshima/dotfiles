@@ -20,6 +20,7 @@
         mwim
         open-junk-file
         popwin
+        rust-mode
         smartparens
         smex
         web-mode
