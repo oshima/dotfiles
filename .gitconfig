@@ -19,3 +19,5 @@
 	sw = switch
 [core]
 	editor = emacsclient -nw -a ''
+[pull]
+	rebase = false
