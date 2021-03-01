@@ -3,6 +3,9 @@
 	email = k.oshjma@gmail.com
 [color]
 	ui = true
+[color "grep"]
+	filename = cyan
+	linenumber = yellow
 [alias]
 	ad = add
 	br = branch
