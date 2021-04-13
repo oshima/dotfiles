@@ -6,10 +6,10 @@
       (blue "blue")
       (magenta "magenta")
       (cyan "cyan")
-      (orange "color-173")
-      (comment "color-246")
-      (region "color-238")
-      (mode-line "color-235"))
+      (orange "#e78c45")
+      (comment "#969896")
+      (region "#424242")
+      (mode-line "#1c1c1c"))
 
   (custom-theme-set-faces
    'my

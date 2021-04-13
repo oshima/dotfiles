@@ -9,4 +9,4 @@
       '("[%+] " (:propertize "%b" face mode-line-buffer-id)))
 
 (setq mode-line-right-format
-      '("%l,%c" (vc-mode vc-mode) " " mode-name))
+      '(" %l,%c " mode-name))

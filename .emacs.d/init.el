@@ -21,7 +21,7 @@
         mwim
         open-junk-file
         popwin
-        prettier-js
+        rust-mode
         smartparens
         smex
         web-mode
