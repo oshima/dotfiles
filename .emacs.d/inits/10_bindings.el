@@ -13,8 +13,8 @@
 ;; [C-\] unbind
 (global-unset-key (kbd "C-\\"))
 
-;; [C-x f] find-file
-(global-set-key (kbd "C-x f") 'find-file)
+;; [C-x f] find-file-in-repository
+(global-set-key (kbd "C-x f") 'find-file-in-repository)
 
 ;; [C-x r] revert-buffer
 (global-set-key (kbd "C-x r") 'revert-buffer)

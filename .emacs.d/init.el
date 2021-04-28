@@ -7,6 +7,7 @@
         company
         dockerfile-mode
         expand-region
+        find-file-in-repository
         fish-mode
         git-commit
         gitconfig-mode
