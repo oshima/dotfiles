@@ -1,6 +1,9 @@
 ;; Hide menu bar
 (menu-bar-mode 0)
 
+;; Disable paren-mode
+(show-paren-mode 0)
+
 ;; Enable to delete/overwrite region
 (delete-selection-mode 1)
 

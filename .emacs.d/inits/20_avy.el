@@ -6,6 +6,6 @@
                          (number-sequence ?A ?Z)))
 
   (set-face-attribute 'avy-lead-face nil
-                      :foreground "yellow"
+                      :foreground "#e7c547"
                       :background 'unspecified
                       :inverse-video t))
