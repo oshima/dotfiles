@@ -4,4 +4,4 @@ set -x EDITOR "emacsclient -nw -a ''"
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
-fish_theme
+fish_config theme choose tomorrow-night-bright
