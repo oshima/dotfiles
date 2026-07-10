@@ -3,9 +3,6 @@
 	email = k.oshjma@gmail.com
 [color]
 	ui = true
-[color "grep"]
-	filename = cyan
-	linenumber = yellow
 [alias]
 	ad = add
 	br = branch
@@ -22,5 +19,8 @@
 	sw = switch
 [core]
 	editor = emacsclient -nw -a ''
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
 [pull]
 	rebase = false
