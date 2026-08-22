@@ -2,8 +2,11 @@
 !/.config/alacritty
 !/.config/fish
 !/.config/git
+!/.config/karabiner
 /.config/fish/completions
 /.config/fish/fish_variables
+/.config/karabiner/assets
+/.config/karabiner/automatic_backups
 
 /.emacs.d/*
 !/.emacs.d/init.el
