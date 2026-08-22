@@ -19,10 +19,7 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
-
-(unless package-archive-contents (package-refresh-contents))
-(dolist (pkg package-selected-packages)
-  (unless (package-installed-p pkg) (package-install pkg)))
+(package-install-selected-packages t)
 
 (setq init-loader-show-log-after-init 'error-only)
 (init-loader-load)
