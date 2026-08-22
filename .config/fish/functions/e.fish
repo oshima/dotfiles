@@ -1,5 +1,5 @@
 function e
-  if test "$argv[1]" = '-q'
+  if test "$argv[1]" = '-k'
     emacsclient -e '(kill-emacs)' 2> /dev/null
     return 0
   end
