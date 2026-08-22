@@ -1,6 +1,7 @@
 /.config/*
 !/.config/alacritty
 !/.config/fish
+!/.config/git
 /.config/fish/completions
 /.config/fish/fish_variables
 
