@@ -30,6 +30,9 @@
 ;; Empty initial message of scratch buffer
 (setq initial-scratch-message "")
 
+;; Use fundamental-mode in scratch buffer
+(setq initial-major-mode 'fundamental-mode)
+
 ;; Scroll 1 line at a time
 (setq scroll-conservatively 1)
 
