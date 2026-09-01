@@ -7,8 +7,8 @@
    '(avy browse-at-remote company dockerfile-mode expand-region
          find-file-in-repository fish-mode flx-ido git-commit go-mode
          ido-vertical-mode init-loader json-mode markdown-mode
-         multiple-cursors mwim open-junk-file popwin rust-mode
-         slim-mode smartparens smex web-mode yaml-mode)))
+         multiple-cursors mwim popwin rust-mode slim-mode smartparens
+         smex web-mode yaml-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
