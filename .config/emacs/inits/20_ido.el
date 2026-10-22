@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (ido-mode 1)
 (ido-vertical-mode 1)
 (flx-ido-mode 1)

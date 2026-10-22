@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (global-set-key (kbd "C-;") 'avy-goto-word-1)
 
 (with-eval-after-load 'avy

@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; http://hakurei-shain.blogspot.jp/2010/05/mac.html
 (defun copy-from-macos ()
   (shell-command-to-string "pbpaste"))

@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (deftheme my "My theme.")
 
 (let ((red "#d54e53")

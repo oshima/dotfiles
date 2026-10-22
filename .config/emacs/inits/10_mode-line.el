@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (setq-default mode-line-format
               '("[%+] "
                 (:propertize "%b" face mode-line-buffer-id)

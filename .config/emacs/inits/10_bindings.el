@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; [C-h] backspace
 (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
 

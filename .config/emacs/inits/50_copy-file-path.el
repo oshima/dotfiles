@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 (defun my/buffer-relative-path ()
   "現在のバッファのファイルパスを git ルートからの相対パスにして返す。"
   (let ((file (buffer-file-name)))
